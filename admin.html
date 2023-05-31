@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login - Admin</title>
+</head>
+
+<body>
+    <h1>Administrador</h1>
+
+    <div class="container">
+        <div class="buttons-container">
+            <input type="text" id="username" placeholder="Usuario">
+            <input type="password" id="password" placeholder="Contraseña">
+            <select name="type" id="role">
+                <option value="user">Usuario</option>
+                <option value="admin">Administrador</option>
+            </select>
+            <button id="btnRegister">
+                Registrar
+            </button>
+        </div>
+        <div id="error_message"></div>
+        <table id="users_table">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                    <th>Rol</th>
+                </tr>
+            </thead>
+            <tbody id="users_table_body">
+            </tbody>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
